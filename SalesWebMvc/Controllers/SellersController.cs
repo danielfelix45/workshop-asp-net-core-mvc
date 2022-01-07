@@ -107,7 +107,7 @@ namespace SalesWebMvc.Controllers
                 return RedirectToAction(nameof(Error), new { message = "Id mismatch" });
             }
             try
-            {
+            { 
                 _sellerService.Update(seller);
                 return RedirectToAction(nameof(Index));
             }
